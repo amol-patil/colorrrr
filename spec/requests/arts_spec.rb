@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe "Art Controller", type: :request do
+describe "Arts Controller", type: :request do
 	it "renders homepage successfully" do
     get "/"
     expect(response).to have_http_status(200)
