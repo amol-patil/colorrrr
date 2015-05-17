@@ -15,6 +15,13 @@
     <div class="container-fluid">
       <img src="<%= asset_path( 'colored-pencils.jpg' )%>" class="img-responsive"/>
       <p class="lead text-uppercase">Explore others artsy creations or share yours...because there is nothing more fun than diy!</p>
+      <% @arts.each do |category, items| %>
+        <%= category %> <br>
+        <% items.each do |item| %>
+          <%= image_tag item.image_url %>
+        <% end %>
+        <br><br>
+      <% end %>
     </div>
   </body>
 </html>
