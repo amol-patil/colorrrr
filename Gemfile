@@ -39,6 +39,8 @@ group :development, :test do
 
   # RSpec for TDD
   gem 'rspec-rails'
+
+  gem 'factory_girl_rails'
 end
 
 # Use ActiveModel has_secure_password
